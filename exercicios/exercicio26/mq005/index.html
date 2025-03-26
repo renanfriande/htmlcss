@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opcao 1</a></li>
+                <li><a href="#">Opcao 2</a></li>
+                <li><a href="#">Opcao 3</a></li>
+                <li><a href="#">Opcao 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, corrupti optio! Veniam nisi, atque eaque, fugiat odio sapiente nam quisquam quas enim qui dolore ipsum, cumque culpa fuga! Dolore, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis consequuntur omnis, adipisci ab voluptates, fuga, mollitia magni dolores ipsa vero? Fugit eligendi eveniet, doloribus accusamus modi dolore voluptas rerum.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam minus minima, praesentium, quasi eos veritatis quas ad quis ea autem. Ex fugit dolore eum rerum maxime facere, doloribus quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex minus quo iure sequi eius aliquid ipsa distinctio, eum, voluptates dicta facere quia explicabo! Dicta atque dolorum sit eos fuga natus.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsam id maiores praesentium sed magni recusandae explicabo modi rem quia magnam, velit voluptas ex ea molestiae quaerat accusantium dolorum tenetur?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu () {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+            itens.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
