@@ -1,0 +1,84 @@
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+
+    main {
+        border: 2px solid black;
+        margin: auto;
+    }
+
+    main::after {
+        content: "Essa impressao foi feita atraves do site www.cursoemvideo.com";
+        text-decoration: overline;
+        font-size: 0.7em;
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#print {display: block;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+}
+
+@media only screen and (min-width: 768px) { /*TABLET*/
+    body {
+        background-color: black;
+        background-image: url(../imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: block;}
+        img#print {display: none;}
+        img#pc {display: none;}
+        img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 992px) { /*DESKTOP*/
+    body {
+        background-color: black;
+        background-image: url(../imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#pc {display: block;}
+        img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) { /*TELAS GRANDES*/
+    body {
+        background-color: black;
+        background-image: url(../imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#pc {display: none;}
+        img#tv {display: block;}
+    
+}
+
